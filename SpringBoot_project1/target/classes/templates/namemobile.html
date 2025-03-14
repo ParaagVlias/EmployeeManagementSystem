@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Search Employee</title>
+</head>
+<body>
+    <div align="center">
+        <h3>Enter Name and Mobile Number to Fetch Records</h3>
+        
+        <form action="/namemobile" method="post">
+            <input type="text" placeholder="Enter Name" name="name" required>
+            <input type="text" placeholder="Enter Mobile Number" name="mobile" required>
+            <button type="submit">Search</button>
+        </form>
+
+        <br>
+        <a href="/"><button>Back</button></a>
+    </div>
+</body>
+</html>

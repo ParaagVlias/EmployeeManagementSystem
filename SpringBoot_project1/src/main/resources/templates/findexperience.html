@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Find Employees by Experience</title>
+</head>
+<body>
+    <div align="center">
+        <h3>Enter Experience Range</h3>
+        <form action="/findexperience" method="post">
+    		<input type="number" name="experience" placeholder="Enter experience" required>
+    		<button type="submit">Search</button>
+		</form>
+        <br>
+        <a href="/"><button>Back</button></a>
+    </div>
+</body>
+</html>

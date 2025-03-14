@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Save</title>
+</head>
+<body>
+	<div align="center">
+		<h1>Save Employee Record</h1>
+		
+		<form action="/save" method="post">
+			<input type="text" name="name" placeholder="Enter the name"><br><br>
+			<input type="number" name="mobile" placeholder="Enter the Mobile Number"><br><br>
+			<input type="email" name="email" placeholder="Enter the email"><br><br>
+			<input type="number" name="salary" placeholder="Enter the CTC"><br><br>
+			<input type="number" name="experience" placeholder="Enter the experience years"><br><br>
+			<input type="radio" name="gender" value="male">Male
+			<input type="radio" name="gender" value="female">Female<br><br>
+			<input type="radio" name="joined" value="true">Joined
+			<input type="radio" name="joined" value="false">Not Joined<br><br>
+			<button>Save</button>
+		</form>
+		<br>
+		<a href="/"><button>Back</button></a>
+	</div>
+</body>
+</html>

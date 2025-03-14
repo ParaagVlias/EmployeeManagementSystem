@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Display</title>
+</head>
+<body>
+	<div align="center">
+		<h1>Matching Employee Records</h1>
+		
+		<table border="1">
+			<tr>
+				<th>ID</th>
+				<th>Name</th>
+				<th>Email</th>
+				<th>Mobile</th>
+				<th>Salary</th>
+				<th>Experience</th>
+				<th>Gender</th>
+				<th>Joined</th>
+			</tr>
+			
+			<tr th:each="emp:${employees}">
+				<td th:text="${emp.id}"></td>
+				<td th:text="${emp.name}"></td>
+				<td th:text="${emp.email}"></td>
+				<td th:text="${emp.mobile}"></td>
+				<td th:text="${emp.salary}+' LPA'"></td>
+				<td th:text="${emp.experience+' Years'}"></td>
+				<td th:text="${emp.gender}"></td>
+				<td th:if="${emp.joined}">YES</td>
+				<td th:if="${!emp.joined}">NO</td>
+			</tr>
+		</table>
+		<br>
+		<a href="/"><button>Back</button></a>
+	</div>
+</body>
+</html>
